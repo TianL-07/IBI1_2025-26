@@ -56,7 +56,7 @@ time_steps=100
 #     FOR each position in recoveries:
 #         SET population to 2 (recovered)
 #     
-#     IF current time step is 10, 50, or 100:
+#     IF current time step is 10, 50, or 99:
 #         STORE a copy of population in snapshots dictionary
 # END FOR
 
@@ -94,10 +94,10 @@ for t in range (time_steps):
     for pos in recoveries:
         population[pos[0],pos[1]] = 2
 
-    if t in [10, 50, 100]:
+    if t in [10, 50, 99]:
         snapshots[t] = population.copy()
 
-time_points = [0, 10, 50, 100]
+time_points = [0, 10, 50, 99]
 fig, axes = plt.subplots(2, 2, figsize=(10, 10), dpi=150)
 
 for idx, t in enumerate(time_points):
