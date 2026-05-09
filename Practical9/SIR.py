@@ -49,7 +49,7 @@ for i in range(1000):
     time_history.append(time)
 
 # generate plots and label each axis
-plt.figure(figuresize=(6,4),dpi=150)
+plt.figure(figsize=(6,4),dpi=150)
 plt.plot(time_history, S_history, label='Susceptible')
 plt.plot(time_history, I_history, label='Infected')
 plt.plot(time_history, R_history, label='Recovered')
@@ -57,5 +57,5 @@ plt.xlabel('Time')
 plt.ylabel('Number of people')
 plt.title('SIR Model Simulation')
 plt.legend()
+plt.savefig("SIR_model.pdf")
 plt.show()
-plt.savefig("SIR_model.png")

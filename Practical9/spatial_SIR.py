@@ -1,6 +1,6 @@
 # import necessary libraries
 import numpy as np
-import matplotlib . pyplot as plt
+import matplotlib.pyplot as plt
 
 # make array of all susceptible population
 # Use 0 for susceptible, 1 for infected, 2 for recovered
@@ -15,8 +15,8 @@ snapshots = {}
 snapshots[0] = population.copy()
 
 # use heat map to plot out
-plt . figure ( figsize =(6,4),dpi=150)
-plt .imshow(population , cmap='viridis', interpolation='nearest')
+plt.figure (figsize =(6,4),dpi=150)
+plt.imshow(population, cmap='viridis', interpolation='nearest')
 
 # Define infection probability and recovery probability
 beta=0.3
