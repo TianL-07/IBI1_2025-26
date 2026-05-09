@@ -1,0 +1,10 @@
+For Practical3:
+I changed the website name and add a theme.
+I modified the commit message to make it more informative.
+
+For Practical4:
+I added a comment to store the results of comparision betwenn d and e.
+I also better defined the variable name to make it more clear.
+
+For Practical5:
+I import the Maiplotlib correctly.
