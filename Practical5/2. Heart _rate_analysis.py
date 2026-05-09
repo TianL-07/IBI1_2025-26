@@ -19,7 +19,7 @@ max_category=max(Category, key=Category.get)
 print(max_category,Category[max_category])
 
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 labels=list(Category.keys())
 sizes=list(Category.values())
 plt.pie(sizes, labels=labels,autopct='%.1f%%')

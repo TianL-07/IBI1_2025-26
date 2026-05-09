@@ -18,7 +18,7 @@ expressions = list(genes.values())
 plt.figure(figsize=(10, 6))
 plt.bar(genes, expressions, color='skyblue', edgecolor='navy')
 plt.xlable('genes', fontsize=12)
-plt.ylabel('expression', fontsize=12)
+plt.ylabel('expressions', fontsize=12)
 plt.title('gene_expression', fontsize=14)
 plt.grid(axis='y', alpha=0.3)
 # Add value labels on top of bars

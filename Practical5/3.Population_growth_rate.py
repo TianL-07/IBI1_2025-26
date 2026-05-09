@@ -21,7 +21,7 @@ print(descending)
 print("The country had largest increase in population is", descending[0])
 print("The country had largest decrease in population is", descending[4])
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 # Create the bar plot
 plt.figure(figsize=(10,6))
 bars=plt.bar(country, percent_change, color='skyblue')
