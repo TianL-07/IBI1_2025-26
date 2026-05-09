@@ -9,6 +9,7 @@ elif d < e:
      print ("The population growth in Scotland is accelerating")   
 else:
      print("The population growth in Scotland do not change")
+# The results of comparing is d > e, so the population growth of Scotland is decelerating.
 X=True
 Y=False
 W=X or Y
