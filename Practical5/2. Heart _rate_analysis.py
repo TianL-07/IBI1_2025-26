@@ -1,27 +1,38 @@
-heart_rates=[72, 60, 126, 85, 90,	59,	76,	131, 88, 121, 64]
-print("Patients number=",len(heart_rates))
-mean= sum(heart_rates)/len(heart_rates)
-print("mean=",mean)
+heart_rates = [72, 60, 126, 85, 90, 59, 76, 131, 88, 121, 64]
 
-Low=0
-Normal=0
-High=0
-for i in range(len(heart_rates)):
-    if heart_rates[i] < 60:
-        Low+=1
-    elif heart_rates[i] > 120:
-        High+=1
+# 1. Sentence with number of patients and mean heart rate
+num_patients = len(heart_rates)
+mean_hr = sum(heart_rates) / num_patients
+print(f"Number of patients: {num_patients}, mean heart rate: {mean_hr:.2f} bpm")
+
+# Categorise heart rates
+low = 0
+normal = 0
+high = 0
+
+for rate in heart_rates:
+    if rate < 60:
+        low += 1
+    elif rate > 120:
+        high += 1
     else:
-        Normal+=1
-print("Patients=", Low+High)
-Category={"Low":Low, "Normal":Normal, "High":High}
-max_category=max(Category, key=Category.get)
-print(max_category,Category[max_category])
+        normal += 1
 
-import numpy as np
+# 2. Print number of patients in each category
+print(f"Low (<60 bpm): {low} patients")
+print(f"Normal (60–120 bpm): {normal} patients")
+print(f"High (>120 bpm): {high} patients")
+
+# Identify largest category
+categories = {"Low": low, "Normal": normal, "High": high}
+largest = max(categories, key=categories.get)
+print(f"The largest category is '{largest}' with {categories[largest]} patients")
+
+# 3. Pie chart
 import matplotlib.pyplot as plt
-labels=list(Category.keys())
-sizes=list(Category.values())
-plt.pie(sizes, labels=labels,autopct='%.1f%%')
-plt.title("Patients' heart rates category")
+
+labels = list(categories.keys())
+sizes = list(categories.values())
+plt.pie(sizes, labels=labels, autopct='%.1f%%')
+plt.title("Heart Rate Categories Distribution")
 plt.show()
