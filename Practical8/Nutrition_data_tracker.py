@@ -7,12 +7,6 @@ class food_item:
         self.carbs = carbs
         self.fat = fat
 
-# Create several food item instances
-apple=food_item("apple",60,0.3,15,0.5)
-burger=food_item("burger", 500, 25, 40, 30)
-rice=food_item("rice", 200, 4, 45, 1)
-cake=food_item('cake',500, 10, 40, 60)
-
 # Function to compute total nutrition for a list of food items
 def total_nutrition(food_list):
     total_calories = 0
@@ -32,11 +26,25 @@ def total_nutrition(food_list):
     print("Total fat:", total_fat)
 
     # Issue a warning if total calories exceed 2500 or total fat exceeds 90g
-    if total_calories>2500 or total_fat>90:
-        print(f'WARNING!')
+    if total_calories > 2500:
+        print(f"Warning: Calorie intake exceeds 2500 kcal ({total_calories:.1f} kcal)")
+    else: 
+        print(f"Your calorie intake is healthy.")
+
+    if total_fat > 90:
+        print(f"Warning: Fat intake exceeds 90 g ({total_fat:.1f} g)")
+    else:
+        print("Your fat intake is healthy.")
 
     return total_calories, total_proteins, total_carbonhydrate, total_fat
 
 # Example usage:
-my_food_today=[apple,burger,rice,cake]
-total_nutrition(my_food_today)
+if __name__ == "__main__":
+    # Create several food item instances
+    apple=food_item("apple",60,0.3,15,0.5)
+    burger=food_item("burger", 500, 25, 40, 30)
+    rice=food_item("rice", 200, 4, 45, 1)
+    cake=food_item('cake',500, 10, 40, 60)
+
+    my_food_today=[apple,burger,rice,cake]
+    total_nutrition(my_food_today)

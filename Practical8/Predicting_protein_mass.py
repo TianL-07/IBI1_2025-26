@@ -20,6 +20,7 @@ def protein_mass(sequence):
     return total_mass
 
 # Example usage:
-x='VLTC'
-y=protein_mass(x)
-print(y)
+if __name__ == "__main__":
+    x='VLTC'
+    y=protein_mass(x)
+    print(y)
