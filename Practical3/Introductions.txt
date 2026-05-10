@@ -1,2 +1,3 @@
 Hello, my name is LAN Tian.
 This is my first time using GitHub.
+I am happy to explore the world of BIomedical Informatics.
