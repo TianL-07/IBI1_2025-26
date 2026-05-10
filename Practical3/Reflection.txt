@@ -1,2 +1,5 @@
-First I forgot how to create a file...
-But everything goes smooth now!
+I often get stuck when Git opens an editor like Vim for the first time. 
+I don't know how to save and exit, and I end up closing the whole terminal.
+Another mistake I made: I kept running git commit without using git add first. 
+I thought committing would automatically save all my changes. 
+It took me a while to understand that add is like staging, and commit is like taking a photo of the staged snapshot.
