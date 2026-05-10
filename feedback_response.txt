@@ -1,10 +1,37 @@
-For Practical3:
-I changed the website name and add a theme.
-I modified the commit message to make it more informative.
+Response to Week 3–5 Feedback
 
-For Practical4:
-I added a comment to store the results of comparision betwenn d and e.
-I also better defined the variable name to make it more clear.
+Week 3 Feedback Corrections:
+1. Website configuration: 
+   - Fixed GitHub Pages to point to my new account.
 
-For Practical5:
-I import the Maiplotlib correctly.
+2. File overwrite error:
+   - Overwrote the file with the required content.
+
+3. Commit messages:
+   - Improved commit messages to be more descriptive (e.g., "Added gene expression bar chart", "Fixed heart rate category logic").
+   - Each commit now clearly states which files were modified and what changes were made.
+
+Week 4 Feedback Corrections:
+1. Comparison result comment:
+   - Added a comment in the Week 4 script that stores the result of comparing variable d and e.
+
+2. Variable naming:
+   - Changed variable names to be more descriptive (e.g., using "heart_rates", "gene_expression_dict" instead of single letters). 
+   - No marks were deducted, but I have improved readability.
+
+Week 5 Feedback Corrections:
+1. Matplotlib import:
+   - Corrected the import statement from "import matplotlib" to "import matplotlib.pyplot as plt".
+   - All plotting scripts now use the correct import.
+
+2. Hard-coded dictionary size:
+   - Removed hard-coded length in the gene expression average calculation.
+   - Now using len(genes_dict) to compute the average dynamically.
+
+3. Bar chart showing only USA:
+   - Fixed the population growth bar chart to display percentage change for all five countries (UK, China, Italy, Brazil, USA).
+   - Chart is now well-labelled and includes all countries.
+
+
+All files have been updated in the GitHub repository under the appropriate Practical directories. 
+I confirm that the code now passes the marker’s requirements for Weeks 3–5 and the later practicals.
