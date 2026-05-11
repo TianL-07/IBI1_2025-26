@@ -68,7 +68,7 @@ def get_longest_orf_codons(seq, target_stop):
     return best_codons
 
 def main():
-    # Input file name (adjust path if needed)
+    # Input file name 
     input_file = 'Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa'
     if not os.path.exists(input_file):
         print(f"Error: Input file '{input_file}' not found.")
@@ -121,7 +121,7 @@ def main():
     if other_count > 0:
         data['Other'] = other_count
 
-    # Sort data for consistent pie order (optional)
+    # Sort data for consistent pie order 
     sorted_items = sorted(data.items(), key=lambda x: x[1], reverse=True)
     labels = [item[0] for item in sorted_items]
     sizes = [item[1] for item in sorted_items]
@@ -136,9 +136,7 @@ def main():
     # Save to file
     output_plot = 'codon_distribution.png'
     plt.savefig(output_plot, dpi=300, bbox_inches='tight')
-    print(f"Pie chart saved as '{output_plot}'")
-    # Optionally display (but task only requires saving to file)
-    # plt.show()
+
 
 if __name__ == '__main__':
     main()
