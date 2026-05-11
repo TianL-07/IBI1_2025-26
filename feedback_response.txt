@@ -18,6 +18,7 @@ Week 4 Feedback Corrections:
    - Added a comment in the Week 4 script that stores the result of comparing variable d and e.
 
 Week 5 Feedback Corrections:
+(Mainly see commit "Practical 5: correct variable overwrite, add all category outputs, fix bar chart and labels")
 1. Matplotlib import:
    - Corrected the import statement from "import matplotlib" to "import matplotlib.pyplot as plt".
    - All plotting scripts now use the correct import.
