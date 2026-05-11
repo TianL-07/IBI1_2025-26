@@ -3,6 +3,8 @@ Response to Week 3–5 Feedback
 Week 3 Feedback Corrections:
 1. Website configuration: 
    - Fixed GitHub Pages to point to my new account.
+2. Formated the website:
+   - Add a nice theme for the website
 
 2. File overwrite error:
    - Overwrote the file with the required content.
@@ -14,10 +16,6 @@ Week 3 Feedback Corrections:
 Week 4 Feedback Corrections:
 1. Comparison result comment:
    - Added a comment in the Week 4 script that stores the result of comparing variable d and e.
-
-2. Variable naming:
-   - Changed variable names to be more descriptive (e.g., using "heart_rates", "gene_expression_dict" instead of single letters). 
-   - No marks were deducted, but I have improved readability.
 
 Week 5 Feedback Corrections:
 1. Matplotlib import:
