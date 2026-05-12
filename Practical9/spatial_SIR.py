@@ -113,3 +113,6 @@ for idx, t in enumerate(time_points):
         ax.text(0.5, 0.5, f'Time step {t} not available', 
                 ha='center', va='center', transform=ax.transAxes)
         ax.axis('off')
+
+plt.tight_layout()   
+plt.show() 
