@@ -1,6 +1,6 @@
 Question: What was the distribution of DALYs across all countries in 2019?
 
-Line number where the code starts: Approximately line 50 in dalys.py (the section under "# Additional question").
+Line number where the code starts: Approximately line 57 in dalys.py (the section under "# Additional question").
 
 Brief discussion:
 The histogram shows a roughly bell‑shaped but slightly right‑skewed distribution, with most countries having DALYs between 20,000 and 35,000 per 100,000 people. 
