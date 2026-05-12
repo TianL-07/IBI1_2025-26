@@ -6,10 +6,10 @@ Week 3 Feedback Corrections:
 2. Formated the website:
    - Add a nice theme for the website
 
-2. File overwrite error:
+3. File overwrite error:
    - Overwrote the file with the required content.
 
-3. Commit messages:
+4. Commit messages:
    - Improved commit messages to be more descriptive (e.g., "Added gene expression bar chart", "Fixed heart rate category logic").
    - Each commit now clearly states which files were modified and what changes were made.
 
